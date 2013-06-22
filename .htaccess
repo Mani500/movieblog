@@ -1,0 +1,9 @@
+# enable rewrite engine
+RewriteEngine off
+
+# Condition de redirection
+RewriteCond $1 !^(index\.php|robots\.txt|static)
+
+# RewriteBase d:/www/citizenmedia/www/labs/codeigniter-test
+
+RewriteRule ^(.*)$ index.php/$1 [L]
